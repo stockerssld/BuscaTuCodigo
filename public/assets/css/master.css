@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Hackman';
-  src: url('../fonts/Hackman/Hackman.ttf'); /* IE9 Compat Modes */
-  src: url('../fonts/Hackman/Hackman.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('./fonts/Hackman/Hackman.ttf'); /* IE9 Compat Modes */
+  src: url('./fonts/Hackman/Hackman.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 @font-face {
   font-family: 'Hackman-Bold';
-  src: url('../fonts/Hackman/Hackman Bold.ttf'); /* IE9 Compat Modes */
-  src: url('../fonts/Hackman/Hackman Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('./fonts/Hackman/Hackman Bold.ttf'); /* IE9 Compat Modes */
+  src: url('./fonts/Hackman/Hackman Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 *,
 *::before,
