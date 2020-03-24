@@ -7,7 +7,7 @@ import { Loader } from './Components/Loader';
 function App(){
     return(
         <>
-        {<Loader isPageLoad={true} /> }	
+        {/* {<Loader isPageLoad={true} /> }	 */}
           <Routes/>
         </>)
 }

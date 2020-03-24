@@ -11,6 +11,7 @@ export const Card = styled.a`
     background: ${props => props.Background || "#FFF"};
     cursor: ${props => props.Cursor || "pointer"};
     padding: 20px;
+    box-shadow: -9 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
 export const CardTitle= styled.div`
     border-bottom: 1px solid #EEE;
