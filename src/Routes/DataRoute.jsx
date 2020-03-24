@@ -1,6 +1,7 @@
 import React from 'react'
 import NoAuth from "./../Pages/NoAuth";
 import Home from "./../Pages/Home";
+import { CardExample } from '../Util/Cards/example';
 export const Rutas = [
   {
     path: "/",
@@ -10,12 +11,12 @@ export const Rutas = [
   },
   {
     path: "/Cards",
-    main: () => <h2>Card</h2>
+    main: () => <CardExample/>
   },
   {
     path: "/Imagenes",
     main: () => <NoAuth/>
-  }
+  },
 ];
 
 export const RenderComponent = props => {

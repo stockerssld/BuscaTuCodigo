@@ -7,7 +7,7 @@ import styled from "styled-components";
 import SideBar from "./SideBar";
 
 const StyledContainer = styled.div`
-        width: 800px;
+        width: auto;
         height: 500px;
         background-color: #efefef;
         margin: auto;
