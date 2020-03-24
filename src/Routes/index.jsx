@@ -11,7 +11,9 @@ import {
 import { Rutas, RenderComponent } from "./DataRoute";
 import Layout from "../Layout";
 
+
 export default function() {
+  
   return (
       <Router>
         <Layout>
