@@ -17,4 +17,5 @@ export const Image=styled.img`
               props.Sepia?'sepia(100%)':
               props.Shadow?'drop-shadow(8px 8px 10px green)':
               'null'}};
+    
 `
