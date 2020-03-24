@@ -1,4 +1,5 @@
 ./node_modules
 .cache
+./.cache
 dist
 node_modules
