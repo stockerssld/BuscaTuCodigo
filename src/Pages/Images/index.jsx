@@ -53,7 +53,7 @@ export default function ImagesPage() {
                             </p>
                             <div onClick={()=>{
                             propiedad.setPropiedad({ ...propiedad.propiedad, efecto :item.efecto})
-                            }} style={{background:"green"}}>
+                            }} >
                                 <item.Ejemplo />
                             </div>
                             {/* <Column.Group style={{ textAlign: 'center' }}>
