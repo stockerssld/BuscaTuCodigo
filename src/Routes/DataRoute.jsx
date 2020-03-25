@@ -2,7 +2,8 @@ import React from 'react'
 import NoAuth from "./../Pages/NoAuth";
 import Home from "./../Pages/Home";
 import { CardExample } from '../Util/Cards/example';
-import { ImageExample } from '../Util/Images/example';
+import ImagesPage from '../Pages/Images';
+
 export const Rutas = [
   {
     path: "/",
@@ -16,7 +17,7 @@ export const Rutas = [
   },
   {
     path: "/Imagenes",
-    main: () => <ImageExample/>
+    main: () => <ImagesPage/>
   },
 ];
 

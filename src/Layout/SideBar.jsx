@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-export default function SideBar({show}) {
-  if(!show) return null
-  return (<SideBarStyled>
+export default function SideBar({show,show2}) {
+  // console.log(show2)
+  const Menu=()=>(<SideBarStyled>
     <ul>
       <li>
         <Link to="/">Home</Link>
@@ -15,6 +15,9 @@ export default function SideBar({show}) {
         <Link to="/Imagenes">Imagenes</Link>
       </li></ul>
   </SideBarStyled>)
+  if(!show) return null
+  if (show2)  return <>asdas</>
+  return <Menu/>
 }
 
 const SideBarStyled = styled.nav`

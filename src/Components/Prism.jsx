@@ -2,10 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import theme from 'prism-react-renderer/themes/nightOwl';
-// import { Pre, LineNo } from './styles'
-//import Highlight, { defaultProps } from 'prism-react-renderer'
-//import theme from 'prism-react-renderer/themes/nightOwl'
-
 const Wrapper = styled.div`
   font-family: sans-serif;
   text-align: center;
@@ -28,21 +24,13 @@ const LineNo = styled.span`
   opacity: 0.3;
 `
 
-const exampleCode = `
-(function someDemo() {
-  var test = "Hello World!";
-  console.log(test);
-})();
-
-return () => <App />;
-`.trim()
 
 
 //https://codesandbox.io/s/00o4wx0jqv
 export function Prism({ prismData }) {
 	return(
 		<Wrapper>		
-		  <Highlight {...defaultProps} theme={theme} code={exampleCode} language="jsx">
+		  <Highlight {...defaultProps} theme={theme} code={prismData} language="js">
 		    {({ className, style, tokens, getLineProps, getTokenProps }) => (
 		      <Pre className={className} style={style}>
 		        {tokens.map((line, i) => (
@@ -57,20 +45,3 @@ export function Prism({ prismData }) {
 		</Wrapper>
 	)
 }
-
-// const Basic = () => (
-//   <Highlight {...defaultProps} theme={theme} code={exampleCode} language="jsx">
-//     {({ className, style, tokens, getLineProps, getTokenProps }) => (
-//       <Pre className={className} style={style}>
-//         {tokens.map((line, i) => (
-//           <div {...getLineProps({ line, key: i })}>
-//             <LineNo>{i + 1}</LineNo>
-//             {line.map((token, key) => <span {...getTokenProps({ token, key })} />)}
-//           </div>
-//         ))}
-//       </Pre>
-//     )}
-//   </Highlight>
-// )
-
-// export default Basic

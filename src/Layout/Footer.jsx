@@ -3,9 +3,12 @@ import styled from 'styled-components'
 
 
 const StyledFooter=styled.div`
-  grid-column: 1/-1;
-  grid-row: 5/-1;
-  background-color:green;
+      padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(62, 69, 81); color: rgb(255, 255, 255);
+    width: 100%;
 `
 export default function (){
   return(

@@ -5,6 +5,7 @@ import {drawerToggleButton as DrawerToggleButton} from './SideBar'
 
 
 const StyledHeader = styled.div`
+margin-top: 32px;
 & .toolbar{
   position: fixed;
   top:0;
@@ -12,6 +13,7 @@ const StyledHeader = styled.div`
   width:100%;
   height: 56px;
   background-color:#521751;
+  
 }
 & .toolbar__navigation{
 display:flex;
@@ -94,6 +96,6 @@ export default function Header({ChangeStatusSideBar}) {
         </div>
       </nav>
     </header>
-
+    <br/>
   </StyledHeader>
 }

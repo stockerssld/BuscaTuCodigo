@@ -1,9 +1,9 @@
 import { useState } from 'react';
 export function usePrism() {
-	const [ prismPath, setPrismPath ] = useState('A Welcome Message.');
+	const [ prismPath, setPrismPath ] = useState('Bienvenido a BuscaTuCodigo');
 	const [ prismData, setPrismData ] = useState(`About.
 ==============
-Bienvenido a la experiencia a BuscaTuCodigo
+Bienvenido a BuscaTuCodigo
 ==============
 `);
 	return {
