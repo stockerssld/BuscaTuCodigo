@@ -14,7 +14,7 @@ export const ImagesData = [
         Titulo: "Imagen",
         Descripcion: 'Filtros de Imagenes',
         
-        Subtitulo: 'Ejemplos de Filtros',
+        Subtitulo: 'Seleccione un filtro para aplicarlo.',
         Ejemplos: [
             {
                 titulo: "normal",

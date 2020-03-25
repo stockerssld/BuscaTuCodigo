@@ -4,11 +4,6 @@ import { Image } from '.'
 export const ImageExample=({propiedadGeneral})=>{
     const {link,border,efecto}=propiedadGeneral
     switch (efecto) {
-        case "":
-             return (<div>
-                <Image src={link} BorderRadius={border}/>
-            </div>)
-            break;
             case "Brightness":
              return (<div>
                 <Image src={link} BorderRadius={border} Brightness/>
@@ -52,9 +47,8 @@ export const ImageExample=({propiedadGeneral})=>{
     
         default:
          return (<div>
-                <Image src={link} BorderRadius={border} Shadow/>
+                <Image src={link} BorderRadius={border} />
             </div>)
     }
-return(<></>)
 }
 
