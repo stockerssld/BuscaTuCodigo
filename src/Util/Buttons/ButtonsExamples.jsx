@@ -6,13 +6,13 @@ export const ButtonsExample=()=>{
     console.log('Colors',Colors)
     return(
     <div>
+   <Button Secundary  Size="Small">
+        HOLA
+    </Button>
     <Button Background="orange" Fha="yellow">
         HOLA
     </Button>
-    <Button Primary>
-        HOLA
-    </Button>
-    <Button Secundary>
+    <Button Primary Size="Large">
         HOLA
     </Button>
     <Button Info>
@@ -24,7 +24,7 @@ export const ButtonsExample=()=>{
     <Button Error>
         Hola
     </Button>
-    <Button Warning>
+    <Button Block Warning>
         Hola
     </Button>
     <Button Link>
