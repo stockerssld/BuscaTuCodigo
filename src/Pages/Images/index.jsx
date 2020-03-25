@@ -12,12 +12,15 @@ export default function ImagesPage() {
 
     const propiedad = usePropiedad()
     const prism = usePrism()
+    const [Border, setBorder] = useState(null)
     useEffect(() => {
         propiedad.setPropiedad({ ...propiedad.propiedad, link: 'https://i.blogs.es/9927c4/portada/450_1000.jpg' })
     }, [])
+
+
     const {propiedad:propiedadGeneral}=propiedad
     console.log(propiedadGeneral)
-    const [Border, setBorder] = useState('50%')
+    
     if(propiedadGeneral===null){
         return <>Loading</>
     }
@@ -33,7 +36,7 @@ export default function ImagesPage() {
                     <h2>Link</h2>
                     <input value={propiedadGeneral.link} onChange={(e)=>propiedad.setPropiedad({ ...propiedad.propiedad,link:e.target.value})} placeholder="Link" />
                     <h2>Border Radius</h2>
-                    <input value={Border} placeholder="Link" />
+                    <input value={Border} onChange={(e)=>  propiedad.setPropiedad({ ...propiedad.propiedad, border:e.target.value })} placeholder="Border" />
                     <div>
                         <button>Ver codigo</button>
                     </div>
@@ -48,7 +51,9 @@ export default function ImagesPage() {
                             <p>
                                 {item.titulo}
                             </p>
-                            <div>
+                            <div onClick={()=>{
+                            propiedad.setPropiedad({ ...propiedad.propiedad, efecto :item.efecto})
+                            }} style={{background:"green"}}>
                                 <item.Ejemplo />
                             </div>
                             {/* <Column.Group style={{ textAlign: 'center' }}>

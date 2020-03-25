@@ -1,25 +1,60 @@
 import React from 'react'
-
 import { Image } from '.'
 
+export const ImageExample=({propiedadGeneral})=>{
+    const {link,border,efecto}=propiedadGeneral
+    switch (efecto) {
+        case "":
+             return (<div>
+                <Image src={link} BorderRadius={border}/>
+            </div>)
+            break;
+            case "Brightness":
+             return (<div>
+                <Image src={link} BorderRadius={border} Brightness/>
+            </div>)
+            break;
+            case "Contrast":
+             return (<div>
+                <Image src={link} BorderRadius={border} Contrast/>
+            </div>)
+            break;
+            case "Grayscale":
+             return (<div>
+                <Image src={link} BorderRadius={border} Grayscale/>
+            </div>)
+            break;
+            case "Huerotate":
+             return (<div>
+                <Image src={link} BorderRadius={border} Huerotate/>
+            </div>)
+            break;
+            case "Invert":
+             return (<div>
+                <Image src={link} BorderRadius={border} Invert/>
+            </div>)
+            break;
+            case "Opacity":
+             return (<div>
+                <Image src={link} BorderRadius={border} Opacity/>
+            </div>)
+            break;
+            case "Saturate":
+             return (<div>
+                <Image src={link} BorderRadius={border} Saturate/>
+            </div>)
+            break;
+            case "Sepia":
+             return (<div>
+                <Image src={link} BorderRadius={border} Sepia/>
+            </div>)
+            break;
+    
+        default:
+         return (<div>
+                <Image src={link} BorderRadius={border} Shadow/>
+            </div>)
+    }
+return(<></>)
+}
 
-// export const ImageExample2=()=>(
-//     <div>
-//         <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" />
-//         <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" Brightness />
-//         <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" Contrast />
-//         <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" Grayscale />
-//         <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" Huerotate />
-//         <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" Invert />
-//         <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" Opacity />
-//         <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" Saturate />
-//         <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" Sepia />
-//         <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" Shadow />
-//     </div>
-// )
-
-export const ImageExample=({imagen})=>(
-    <div>
-        <Image src={imagen?imagen:'https://i.blogs.es/9927c4/portada/450_1000.jpg'} />
-    </div>
-)
