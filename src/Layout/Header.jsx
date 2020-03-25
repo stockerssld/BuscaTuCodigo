@@ -91,6 +91,9 @@ export default function Header({ChangeStatusSideBar}) {
               <Link to="/Cards">Cards</Link>
             </li>
             <li>
+              <Link to="/Botones">Botones</Link>
+            </li>
+            <li>
               <Link to="/Imagenes">Imagenes</Link>
             </li></ul>
         </div>

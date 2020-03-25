@@ -1,6 +1,8 @@
 import React from 'react'
 
 import { Image } from '.'
+import { ButtonsExample } from '../Buttons/ButtonsExamples'
+import { Button } from 'zent'
 
 
 export const ImageExample2=()=>(
@@ -20,6 +22,7 @@ export const ImageExample2=()=>(
 
 export const ImageExample=()=>(
     <div>
-        <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" />
+        <ButtonsExample/>
+        {/* <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" /> */}
     </div>
 )
