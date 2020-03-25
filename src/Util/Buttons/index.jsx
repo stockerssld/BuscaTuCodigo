@@ -2,10 +2,11 @@ import styled from 'styled-components'
 import {Error,Info,Link,Primary,Secundary,Success,Warning} from './../Color'
 export const Button=styled.button`
     display: inline-block;
-    height: 32px;
-    line-height: 30px;
-    font-size: 14px;
-    padding: 0 16px;
+    height: ${props=>{return props.Size=='Large' ?'40px' : props.Size=='Small'?'24px': props.Size==''?'32px':'32px'}};
+    width:   ${props=>{return props.Block?'100%':'null'}};
+    line-height:  ${props=>{return props.Size=='Large' ?'38px' : props.Size=='Small'?'22px':'30px' }};
+    font-size:  ${props=>{return props.Size=='Large' ?'16px' : props.Size=='Small'?'10px':'14px' }};;
+    padding:  ${props=>{return props.Size=='Large' ?'0 24px' : props.Size=='Small'?'0 8px':'0 16px' }};
     border-radius: 2px;
     border-color: ${props=>{return props.Link?'transparent' : ''}};
     box-shadow:  ${props=>{return props.Link?'none' : ''}};
@@ -19,6 +20,9 @@ export const Button=styled.button`
     transition: all 0.3s;
     -webkit-appearance: none;
     -webkit-box-shadow:   ${props=>{return props.Link?'none' : ''}};
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 12px;
     color:   ${props=>{return props.Link?'#1890ff' : '#fff'}};
     background:  ${props=>{return props.Primary?'#8628b1' : 
                     props.Secundary?'#b16d28':
