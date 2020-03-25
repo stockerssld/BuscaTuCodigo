@@ -1,5 +1,11 @@
 import React from 'react'
 import { Image } from '../../Util/Images'
+export function ImagenEjemplo0V(){
+    return (<> 
+    <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" />
+    </>
+    )
+}
 export function ImagenEjemplo1V(){
     return (<> 
     <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" Brightness />
@@ -54,7 +60,14 @@ export function ImagenEjemplo9V(){
     </>
     )
 }
-
+export const ImagenEjemplo0 = `
+import React from 'react'
+export default function ImagenEjemplo1(){
+    return (
+        <Image src="https://i.blogs.es/9927c4/portada/450_1000.jpg" />
+        )
+}
+`.trim()
 export const ImagenEjemplo1 = `
 import React from 'react'
 export default function ImagenEjemplo1(){

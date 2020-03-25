@@ -1,3 +1,4 @@
+import { ImagenEjemplo0V, ImagenEjemplo0 } from '../../Documentación/Imagenes/Ejemplo1'
 import { ImagenEjemplo1V, ImagenEjemplo1 } from '../../Documentación/Imagenes/Ejemplo1'
 import { ImagenEjemplo2V, ImagenEjemplo2 } from '../../Documentación/Imagenes/Ejemplo1'
 import { ImagenEjemplo3V, ImagenEjemplo3 } from '../../Documentación/Imagenes/Ejemplo1'
@@ -11,50 +12,58 @@ import { ImagenEjemplo9V, ImagenEjemplo9 } from '../../Documentación/Imagenes/E
 export const ImagesData = [
     {
         Titulo: "Imagen",
-        Subtitulo: 'Filtros de Imagenes',
-        Componentes: [
+        Descripcion: 'Filtros de Imagenes',
+        
+        Subtitulo: 'Ejemplos de Filtros',
+        Ejemplos: [
+            {
+                titulo: "normal",
+                descripcion: " asd asd ",
+                Ejemplo: ImagenEjemplo0V,
+                codigo: ImagenEjemplo0
+            }, 
             {
                 titulo: "Brightness",
                 descripcion: " asd asd ",
                 Ejemplo: ImagenEjemplo1V,
                 codigo: ImagenEjemplo1
             }, {
-                titulo: "Brightness",
+                titulo: "Contrast",
                 descripcion: " asd asd ",
                 Ejemplo: ImagenEjemplo2V,
                 codigo: ImagenEjemplo2
             }, {
-                titulo: "Brightness",
+                titulo: "Grayscale",
                 descripcion: " asd asd ",
                 Ejemplo: ImagenEjemplo3V,
                 codigo: ImagenEjemplo3
             }, {
-                titulo: "Brightness",
+                titulo: "Huerotate",
                 descripcion: " asd asd ",
                 Ejemplo: ImagenEjemplo4V,
                 codigo: ImagenEjemplo4
             }, {
-                titulo: "Brightness",
+                titulo: "Invert",
                 descripcion: " asd asd ",
                 Ejemplo: ImagenEjemplo5V,
                 codigo: ImagenEjemplo5
             }, {
-                titulo: "Brightness",
+                titulo: "Opacity",
                 descripcion: " asd asd ",
                 Ejemplo: ImagenEjemplo6V,
                 codigo: ImagenEjemplo6
             }, {
-                titulo: "Brightness",
+                titulo: "Saturate",
                 descripcion: " asd asd ",
                 Ejemplo: ImagenEjemplo7V,
                 codigo: ImagenEjemplo7
             }, {
-                titulo: "Brightness",
+                titulo: "Shadow",
                 descripcion: " asd asd ",
                 Ejemplo: ImagenEjemplo8V,
                 codigo: ImagenEjemplo8
             }, {
-                titulo: "Brightness",
+                titulo: "Sepia",
                 descripcion: " asd asd ",
                 Ejemplo: ImagenEjemplo9V,
                 codigo: ImagenEjemplo9

@@ -30,12 +30,12 @@ export default function Layout({ children }) {
             
             <SideBar show2/>
                 </div>
-                <div style={{flex:3.8,paddingLeft:15,paddingRight:15,paddingTop:5}}>
+                <div style={{flex:3.8,paddingLeft:15,paddingRight:15,paddingTop:5, overflow:'scroll'}}>
                     <Body>{children}</Body>
                 </div>
                 </div>
                 {backDrop}
-            <Footer />
+            {/* <Footer /> */}
         </StyledContainer>
     );
 }
